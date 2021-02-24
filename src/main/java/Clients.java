@@ -2,8 +2,8 @@ import java.util.concurrent.CountDownLatch;
 
 public class Clients {
 
-  private static final int NUM_THREADS = 1000;
-  private static final int REQUESTS_THREAD = 100;
+  private static final int NUM_THREADS = 400;
+  private static final int REQUESTS_THREAD = 250;
 
   public static void main(String[] args) throws InterruptedException {
 

@@ -10,7 +10,7 @@ import org.apache.commons.httpclient.params.HttpMethodParams;
 
 public class Client implements Runnable {
 
-  private static final int REQUEST = 100;
+  private static final int REQUEST = 250;
   private String url;
   private HttpClient client;
   CountDownLatch completed;

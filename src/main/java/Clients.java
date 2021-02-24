@@ -2,7 +2,8 @@ import java.util.concurrent.CountDownLatch;
 
 public class Clients {
 
-  private static final int NUM_THREADS = 500;
+  private static final int NUM_THREADS = 1000;
+  private static final int REQUESTS_THREAD = 100;
 
   public static void main(String[] args) throws InterruptedException {
 
@@ -39,7 +40,7 @@ public class Clients {
     long end = System.currentTimeMillis();
 
     // Process results
-    int total = NUM_THREADS*200;
+    int total = NUM_THREADS*REQUESTS_THREAD;
     int success = 0;
     for (int j = 0; j < NUM_THREADS; j++) {
       success += counters[j].getPrimes();

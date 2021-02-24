@@ -17,7 +17,7 @@ public class Clients {
     }
 
     // URL
-    String url = "http://" +  serverIP + ":" + port + "/quizserver_war/prime/";
+    String url = "http://" +  serverIP + ":" + port + "/prime/";
 
     // Create Threads
     CountDownLatch completed = new CountDownLatch(NUM_THREADS);
